@@ -1,5 +1,8 @@
 package com.training.finalexam.finalexam;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Pet {
     private String name;
     private String raceName;
