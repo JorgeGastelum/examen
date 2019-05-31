@@ -1,11 +1,18 @@
 package com.training.finalexam.finalexam;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 
 @Entity
 public class Pet {
+
+    @Column(name = "name", nullable = false)
     private String name;
+
+    @Column(name = "race_name", nullable = false)
     private String raceName;
+
+    @Column(name = "animal_type", nullable = false)
     private String animalType;
 
     public String getName() {
